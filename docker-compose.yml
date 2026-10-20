@@ -12,7 +12,6 @@ services:
 
       
   server1:
-    build: ./server1
     image: mohamed7444/my-project
 
   
