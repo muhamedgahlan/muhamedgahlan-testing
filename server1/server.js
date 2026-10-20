@@ -6,7 +6,7 @@ const containerId = os.hostname();
 
 app.get('/', (req, res) => {
   
-  res.send(`welcome: ${containerId}`);
+  res.send(`from mo : ${containerId}`);
 });
 
 app.listen(PORT, '0.0.0.0', () => {
