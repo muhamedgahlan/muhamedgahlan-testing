@@ -5,10 +5,8 @@ const os = require('os');
 const containerId = os.hostname();
 
 app.get('/', (req, res) => {
-  // السطر ده هو اللي هيخلي الـ Logs تتحرك وتسجل كل طلب بيجيلك
-  console.log(`Received request on container: ${containerId}`);
   
-  res.send(`hello there : ${containerId}`);
+  res.send(`hi : ${containerId}`);
 });
 
 app.listen(PORT, '0.0.0.0', () => {
