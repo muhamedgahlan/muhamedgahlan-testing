@@ -1,0 +1,21 @@
+services:
+  
+  fontend:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./frontend/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - server1
+
+      
+  server1:
+    build: ./server1
+    deploy:
+      replicas: 3
+  
+
+     
+  
+    
